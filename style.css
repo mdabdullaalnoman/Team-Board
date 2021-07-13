@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+
+  font-family: "Poppins", sans-serif;
+}
+*::selection {
+  background-color: chartreuse;
+  color: black;
+}
+body {
+  background: #e5e5e5;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.full-warper {
+  border-radius: 3rem;
+}
+.warper {
+  margin: 0 28.5rem;
+  padding: 3rem;
+  background-color: white;
+}
+
+.player-tittle {
+  margin: 0 0 4rem 0;
+  padding: 0;
+  color: #562eff;
+  font-weight: 500px;
+  font-size: 2.4rem;
+}
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+}
+.thamnel {
+  display: flex;
+  align-items: center;
+}
+.thamnel img {
+  height: 5.6rem;
+  width: 5.6rem;
+  margin-right: 1.6rem;
+}
+.thamnel p {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 500px;
+}
+hr {
+  margin-top: 3rem;
+}
+
+/*---------------------------------
+ Top Blog section Start
+-------------------------------- */
+.blog-tittle {
+  margin-bottom: 3rem;
+  color: #562eff;
+  font-weight: 500px;
+  font-size: 2.4rem;
+}
+.top-blogs {
+  display: flex;
+}
+.top-blogs .blog-thamnel img {
+  width: 17.7rem;
+  height: 11.7rem;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 2.6rem;
+}
+.blog-details {
+  margin-left: 1.6rem;
+}
+.blog-details h3 {
+  font-size: 2rem;
+  font-weight: 500px;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
+.blog-details p {
+  font-size: 1.6rem;
+  color: #9f9f9f;
+}
+
+/*----------------------------- 
+Media Querry
+----------------------------- */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .top-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .warper {
+    margin: 0 3.5rem;
+  }
+  .thamnel {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .warper {
+    padding: 1rem;
+  }
+}
